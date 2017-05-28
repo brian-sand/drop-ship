@@ -1,0 +1,1875 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fil",
+				"fill_in"
+			],
+			[
+				"class",
+				"class_method"
+			],
+			[
+				"refre",
+				"refresh_with_timing"
+			],
+			[
+				"Goo",
+				"Goodbye"
+			],
+			[
+				"myBy",
+				"myByteSlice2\t[]byte ν"
+			],
+			[
+				"my",
+				"myByteSlice2\t[]byte ν"
+			],
+			[
+				"Prin",
+				"Println\tn int, err error ƒ"
+			],
+			[
+				"myByte",
+				"myByteSlice2\t[]byte ν"
+			],
+			[
+				"prin",
+				"Println\tn int, err error ƒ"
+			],
+			[
+				"myFi",
+				"myFixedArr2\t[...]string ν"
+			],
+			[
+				"myF",
+				"myFixedArr2\t[...]string ν"
+			],
+			[
+				"pri",
+				"Println\tn int, err error ƒ"
+			],
+			[
+				"Pri",
+				"Println\tn int, err error ƒ"
+			],
+			[
+				"float",
+				"float2\tfloat64 ν"
+			],
+			[
+				"type",
+				"typeFunc\t ƒ"
+			],
+			[
+				"Pr",
+				"Println\tn int, err error ƒ"
+			],
+			[
+				"p",
+				"Println\tn int, err error ƒ"
+			],
+			[
+				"P",
+				"Println\tn int, err error ƒ"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "spec/features/admin/orders_spec.rb",
+			"settings":
+			{
+				"buffer_size": 334,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/spree/variant_decorator.rb",
+			"settings":
+			{
+				"buffer_size": 797,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/spree/stock/splitter/drop_ship.rb",
+			"settings":
+			{
+				"buffer_size": 1885,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/spree/product_decorator.rb",
+			"settings":
+			{
+				"buffer_size": 1069,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/spree/admin/products_controller_decorator.rb",
+			"settings":
+			{
+				"buffer_size": 927,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/spree/admin/variants_controller_decorator.rb",
+			"settings":
+			{
+				"buffer_size": 421,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/spree/base_controller_decorator.rb",
+			"settings":
+			{
+				"buffer_size": 358,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/spree/admin/shipments/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 4604,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/spree/shipment_decorator.rb",
+			"settings":
+			{
+				"buffer_size": 1101,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/spree/admin/shipments_controller.rb",
+			"settings":
+			{
+				"buffer_size": 1564,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 1 file for \"INSERT\" (regex)\n\n<untitled 147>:\n    7    Spree::Product Exists (0.1ms)  SELECT  1 AS one FROM \"spree_products\" WHERE (\"spree_products\".\"slug\" = 'productforsup1test' AND \"spree_products\".\"deleted_at\" IS NULL) LIMIT 1\n    8    \n    9:   SQL (0.5ms)  INSERT INTO \"spree_products\" (\"name\", \"available_on\", \"shipping_category_id\", \"slug\", \"created_at\", \"updated_at\") VALUES (?, ?, ?, ?, ?, ?)  [[\"name\", \"ProductForSup1Test\"], [\"available_on\", \"2017-03-01 00:00:00.000000\"], [\"shipping_category_id\", 1], [\"slug\", \"productforsup1test\"], [\"created_at\", \"2017-03-07 22:59:44.412229\"], [\"updated_at\", \"2017-03-07 22:59:44.412229\"]]\n   10    Spree::Variant Exists (0.1ms)  SELECT  1 AS one FROM \"spree_variants\" WHERE (\"spree_variants\".\"sku\" = 'PS1' AND \"spree_variants\".\"deleted_at\" IS NULL) AND \"spree_variants\".\"deleted_at\" IS NULL LIMIT 1\n   11    Spree::Variant Load (0.1ms)  SELECT  \"spree_variants\".* FROM \"spree_variants\" WHERE (spree_variants.position IS NOT NULL) AND \"spree_variants\".\"product_id\" = ?  ORDER BY spree_variants.position DESC LIMIT 1  [[\"product_id\", 18]]\n   12    Spree::Supplier Load (0.2ms)  SELECT \"spree_suppliers\".* FROM \"spree_suppliers\" INNER JOIN \"spree_supplier_variants\" ON \"spree_suppliers\".\"id\" = \"spree_supplier_variants\".\"supplier_id\" INNER JOIN \"spree_variants\" ON \"spree_supplier_variants\".\"variant_id\" = \"spree_variants\".\"id\" WHERE \"spree_variants\".\"deleted_at\" IS NULL AND \"spree_variants\".\"product_id\" = ? AND \"spree_variants\".\"is_master\" = ?  [[\"product_id\", 18], [\"is_master\", \"t\"]]\n   13    \n   14:   SQL (0.2ms)  INSERT INTO \"spree_variants\" (\"is_master\", \"sku\", \"cost_currency\", \"product_id\", \"updated_at\", \"position\") VALUES (?, ?, ?, ?, ?, ?)  [[\"is_master\", \"t\"], [\"sku\", \"PS1\"], [\"cost_currency\", \"USD\"], [\"product_id\", 18], [\"updated_at\", \"2017-03-07 22:59:44.414983\"], [\"position\", 1]]\n   15:   SQL (0.1ms)  INSERT INTO \"spree_prices\" (\"currency\", \"amount\", \"variant_id\") VALUES (?, ?, ?)  [[\"currency\", \"USD\"], [\"amount\", 12.5], [\"variant_id\", 28]]\n   16    Spree::Variant Load (0.1ms)  SELECT  \"spree_variants\".* FROM \"spree_variants\" WHERE \"spree_variants\".\"id\" = ? LIMIT 1  [[\"id\", 28]]\n   17      SQL (0.1ms)  UPDATE \"spree_variants\" SET \"updated_at\" = '2017-03-07 22:59:44.423253' WHERE \"spree_variants\".\"id\" = ?  [[\"id\", 28]]\n   ..\n   24    Spree::StockItem Exists (0.1ms)  SELECT  1 AS one FROM \"spree_stock_items\" WHERE (\"spree_stock_items\".\"variant_id\" = 28 AND \"spree_stock_items\".\"deleted_at\" IS NULL AND \"spree_stock_items\".\"stock_location_id\" = 1 AND \"spree_stock_items\".\"deleted_at\" IS NULL) LIMIT 1\n   25    \n   26:   SQL (0.1ms)  INSERT INTO \"spree_stock_items\" (\"variant_id\", \"backorderable\", \"stock_location_id\", \"created_at\", \"updated_at\") VALUES (?, ?, ?, ?, ?)  [[\"variant_id\", 28], [\"backorderable\", \"t\"], [\"stock_location_id\", 1], [\"created_at\", \"2017-03-07 22:59:44.462476\"], [\"updated_at\", \"2017-03-07 22:59:44.462476\"]]\n   27    SQL (0.1ms)  UPDATE \"spree_variants\" SET \"stock_items_count\" = COALESCE(\"stock_items_count\", 0) + 1 WHERE \"spree_variants\".\"id\" = ?  [[\"id\", 28]]\n   28    SQL (0.3ms)  UPDATE \"spree_variants\" SET \"updated_at\" = '2017-03-07 22:59:44.465456' WHERE \"spree_variants\".\"id\" = ?  [[\"id\", 28]]\n   ..\n   43    Spree::ProductProperty Load (0.2ms)  SELECT  \"spree_product_properties\".* FROM \"spree_product_properties\" WHERE (spree_product_properties.position IS NOT NULL) AND \"spree_product_properties\".\"product_id\" = ?  ORDER BY spree_product_properties.position DESC LIMIT 1  [[\"product_id\", 18]]\n   44    \n   45:   SQL (0.1ms)  INSERT INTO \"spree_product_properties\" (\"property_id\", \"product_id\", \"created_at\", \"updated_at\", \"position\") VALUES (?, ?, ?, ?, ?)  [[\"property_id\", 1], [\"product_id\", 18], [\"created_at\", \"2017-03-07 22:59:44.502418\"], [\"updated_at\", \"2017-03-07 22:59:44.502418\"], [\"position\", 1]]\n   46    SQL (0.1ms)  UPDATE \"spree_products\" SET \"updated_at\" = '2017-03-07 22:59:44.504267' WHERE \"spree_products\".\"id\" = ?  [[\"id\", 18]]\n   47    SQL (0.1ms)  UPDATE \"spree_taxons\" SET \"updated_at\" = '2017-03-07 22:59:44.504977' WHERE 1=0\n   48    SQL (0.1ms)  UPDATE \"spree_taxonomies\" SET \"updated_at\" = '2017-03-07 22:59:44.505558' WHERE \"spree_taxonomies\".\"id\" IN (SELECT \"spree_taxonomies\".\"id\" FROM \"spree_taxonomies\" WHERE 1=0  ORDER BY spree_taxonomies.position, spree_taxonomies.created_at)\n   49    Spree::ProductProperty Load (0.1ms)  SELECT  \"spree_product_properties\".* FROM \"spree_product_properties\" WHERE (spree_product_properties.position IS NOT NULL) AND \"spree_product_properties\".\"product_id\" = ?  ORDER BY spree_product_properties.position DESC LIMIT 1  [[\"product_id\", 18]]\n   50:   SQL (0.1ms)  INSERT INTO \"spree_product_properties\" (\"property_id\", \"product_id\", \"created_at\", \"updated_at\", \"position\") VALUES (?, ?, ?, ?, ?)  [[\"property_id\", 2], [\"product_id\", 18], [\"created_at\", \"2017-03-07 22:59:44.507050\"], [\"updated_at\", \"2017-03-07 22:59:44.507050\"], [\"position\", 2]]\n   51    SQL (0.1ms)  UPDATE \"spree_products\" SET \"updated_at\" = '2017-03-07 22:59:44.508487' WHERE \"spree_products\".\"id\" = ?  [[\"id\", 18]]\n   52    SQL (0.1ms)  UPDATE \"spree_taxons\" SET \"updated_at\" = '2017-03-07 22:59:44.509132' WHERE 1=0\n   53    SQL (0.1ms)  UPDATE \"spree_taxonomies\" SET \"updated_at\" = '2017-03-07 22:59:44.509662' WHERE \"spree_taxonomies\".\"id\" IN (SELECT \"spree_taxonomies\".\"id\" FROM \"spree_taxonomies\" WHERE 1=0  ORDER BY spree_taxonomies.position, spree_taxonomies.created_at)\n   54    Spree::ProductProperty Load (0.1ms)  SELECT  \"spree_product_properties\".* FROM \"spree_product_properties\" WHERE (spree_product_properties.position IS NOT NULL) AND \"spree_product_properties\".\"product_id\" = ?  ORDER BY spree_product_properties.position DESC LIMIT 1  [[\"product_id\", 18]]\n   55:   SQL (0.0ms)  INSERT INTO \"spree_product_properties\" (\"property_id\", \"product_id\", \"created_at\", \"updated_at\", \"position\") VALUES (?, ?, ?, ?, ?)  [[\"property_id\", 3], [\"product_id\", 18], [\"created_at\", \"2017-03-07 22:59:44.510983\"], [\"updated_at\", \"2017-03-07 22:59:44.510983\"], [\"position\", 3]]\n   56    SQL (0.1ms)  UPDATE \"spree_products\" SET \"updated_at\" = '2017-03-07 22:59:44.512241' WHERE \"spree_products\".\"id\" = ?  [[\"id\", 18]]\n   57    SQL (0.1ms)  UPDATE \"spree_taxons\" SET \"updated_at\" = '2017-03-07 22:59:44.512795' WHERE 1=0\n   58    SQL (0.1ms)  UPDATE \"spree_taxonomies\" SET \"updated_at\" = '2017-03-07 22:59:44.513276' WHERE \"spree_taxonomies\".\"id\" IN (SELECT \"spree_taxonomies\".\"id\" FROM \"spree_taxonomies\" WHERE 1=0  ORDER BY spree_taxonomies.position, spree_taxonomies.created_at)\n   59    Spree::ProductProperty Load (0.1ms)  SELECT  \"spree_product_properties\".* FROM \"spree_product_properties\" WHERE (spree_product_properties.position IS NOT NULL) AND \"spree_product_properties\".\"product_id\" = ?  ORDER BY spree_product_properties.position DESC LIMIT 1  [[\"product_id\", 18]]\n   60:   SQL (0.0ms)  INSERT INTO \"spree_product_properties\" (\"property_id\", \"product_id\", \"created_at\", \"updated_at\", \"position\") VALUES (?, ?, ?, ?, ?)  [[\"property_id\", 4], [\"product_id\", 18], [\"created_at\", \"2017-03-07 22:59:44.514672\"], [\"updated_at\", \"2017-03-07 22:59:44.514672\"], [\"position\", 4]]\n   61    SQL (0.1ms)  UPDATE \"spree_products\" SET \"updated_at\" = '2017-03-07 22:59:44.516024' WHERE \"spree_products\".\"id\" = ?  [[\"id\", 18]]\n   62    SQL (0.1ms)  UPDATE \"spree_taxons\" SET \"updated_at\" = '2017-03-07 22:59:44.516642' WHERE 1=0\n   63    SQL (0.1ms)  UPDATE \"spree_taxonomies\" SET \"updated_at\" = '2017-03-07 22:59:44.517125' WHERE \"spree_taxonomies\".\"id\" IN (SELECT \"spree_taxonomies\".\"id\" FROM \"spree_taxonomies\" WHERE 1=0  ORDER BY spree_taxonomies.position, spree_taxonomies.created_at)\n   64    Spree::ProductProperty Load (0.1ms)  SELECT  \"spree_product_properties\".* FROM \"spree_product_properties\" WHERE (spree_product_properties.position IS NOT NULL) AND \"spree_product_properties\".\"product_id\" = ?  ORDER BY spree_product_properties.position DESC LIMIT 1  [[\"product_id\", 18]]\n   65:   SQL (0.0ms)  INSERT INTO \"spree_product_properties\" (\"property_id\", \"product_id\", \"created_at\", \"updated_at\", \"position\") VALUES (?, ?, ?, ?, ?)  [[\"property_id\", 5], [\"product_id\", 18], [\"created_at\", \"2017-03-07 22:59:44.518417\"], [\"updated_at\", \"2017-03-07 22:59:44.518417\"], [\"position\", 5]]\n   66    SQL (0.1ms)  UPDATE \"spree_products\" SET \"updated_at\" = '2017-03-07 22:59:44.519563' WHERE \"spree_products\".\"id\" = ?  [[\"id\", 18]]\n   67    SQL (0.0ms)  UPDATE \"spree_taxons\" SET \"updated_at\" = '2017-03-07 22:59:44.520089' WHERE 1=0\n   68    SQL (0.1ms)  UPDATE \"spree_taxonomies\" SET \"updated_at\" = '2017-03-07 22:59:44.520562' WHERE \"spree_taxonomies\".\"id\" IN (SELECT \"spree_taxonomies\".\"id\" FROM \"spree_taxonomies\" WHERE 1=0  ORDER BY spree_taxonomies.position, spree_taxonomies.created_at)\n   69    Spree::ProductProperty Load (0.1ms)  SELECT  \"spree_product_properties\".* FROM \"spree_product_properties\" WHERE (spree_product_properties.position IS NOT NULL) AND \"spree_product_properties\".\"product_id\" = ?  ORDER BY spree_product_properties.position DESC LIMIT 1  [[\"product_id\", 18]]\n   70:   SQL (0.1ms)  INSERT INTO \"spree_product_properties\" (\"property_id\", \"product_id\", \"created_at\", \"updated_at\", \"position\") VALUES (?, ?, ?, ?, ?)  [[\"property_id\", 7], [\"product_id\", 18], [\"created_at\", \"2017-03-07 22:59:44.521790\"], [\"updated_at\", \"2017-03-07 22:59:44.521790\"], [\"position\", 6]]\n   71    SQL (0.1ms)  UPDATE \"spree_products\" SET \"updated_at\" = '2017-03-07 22:59:44.523113' WHERE \"spree_products\".\"id\" = ?  [[\"id\", 18]]\n   72    SQL (0.1ms)  UPDATE \"spree_taxons\" SET \"updated_at\" = '2017-03-07 22:59:44.523808' WHERE 1=0\n   73    SQL (0.1ms)  UPDATE \"spree_taxonomies\" SET \"updated_at\" = '2017-03-07 22:59:44.524352' WHERE \"spree_taxonomies\".\"id\" IN (SELECT \"spree_taxonomies\".\"id\" FROM \"spree_taxonomies\" WHERE 1=0  ORDER BY spree_taxonomies.position, spree_taxonomies.created_at)\n   74    Spree::ProductProperty Load (0.1ms)  SELECT  \"spree_product_properties\".* FROM \"spree_product_properties\" WHERE (spree_product_properties.position IS NOT NULL) AND \"spree_product_properties\".\"product_id\" = ?  ORDER BY spree_product_properties.position DESC LIMIT 1  [[\"product_id\", 18]]\n   75:   SQL (0.1ms)  INSERT INTO \"spree_product_properties\" (\"property_id\", \"product_id\", \"created_at\", \"updated_at\", \"position\") VALUES (?, ?, ?, ?, ?)  [[\"property_id\", 8], [\"product_id\", 18], [\"created_at\", \"2017-03-07 22:59:44.525681\"], [\"updated_at\", \"2017-03-07 22:59:44.525681\"], [\"position\", 7]]\n   76    SQL (0.1ms)  UPDATE \"spree_products\" SET \"updated_at\" = '2017-03-07 22:59:44.527003' WHERE \"spree_products\".\"id\" = ?  [[\"id\", 18]]\n   77    SQL (0.1ms)  UPDATE \"spree_taxons\" SET \"updated_at\" = '2017-03-07 22:59:44.527674' WHERE 1=0\n   78    SQL (0.1ms)  UPDATE \"spree_taxonomies\" SET \"updated_at\" = '2017-03-07 22:59:44.528262' WHERE \"spree_taxonomies\".\"id\" IN (SELECT \"spree_taxonomies\".\"id\" FROM \"spree_taxonomies\" WHERE 1=0  ORDER BY spree_taxonomies.position, spree_taxonomies.created_at)\n   79    Spree::ProductProperty Load (0.1ms)  SELECT  \"spree_product_properties\".* FROM \"spree_product_properties\" WHERE (spree_product_properties.position IS NOT NULL) AND \"spree_product_properties\".\"product_id\" = ?  ORDER BY spree_product_properties.position DESC LIMIT 1  [[\"product_id\", 18]]\n   80:   SQL (0.1ms)  INSERT INTO \"spree_product_properties\" (\"property_id\", \"product_id\", \"created_at\", \"updated_at\", \"position\") VALUES (?, ?, ?, ?, ?)  [[\"property_id\", 11], [\"product_id\", 18], [\"created_at\", \"2017-03-07 22:59:44.529745\"], [\"updated_at\", \"2017-03-07 22:59:44.529745\"], [\"position\", 8]]\n   81    SQL (0.1ms)  UPDATE \"spree_products\" SET \"updated_at\" = '2017-03-07 22:59:44.531172' WHERE \"spree_products\".\"id\" = ?  [[\"id\", 18]]\n   82    SQL (0.1ms)  UPDATE \"spree_taxons\" SET \"updated_at\" = '2017-03-07 22:59:44.531780' WHERE 1=0\n   ..\n   88    SQL (0.1ms)  DELETE FROM \"friendly_id_slugs\" WHERE \"friendly_id_slugs\".\"deleted_at\" IS NULL AND \"friendly_id_slugs\".\"sluggable_id\" = ? AND \"friendly_id_slugs\".\"sluggable_type\" = ? AND \"friendly_id_slugs\".\"slug\" = ?  [[\"sluggable_id\", 18], [\"sluggable_type\", \"Spree::Product\"], [\"slug\", \"productforsup1test\"]]\n   89    \n   90:   SQL (0.2ms)  INSERT INTO \"friendly_id_slugs\" (\"sluggable_id\", \"sluggable_type\", \"slug\", \"created_at\") VALUES (?, ?, ?, ?)  [[\"sluggable_id\", 18], [\"sluggable_type\", \"Spree::Product\"], [\"slug\", \"productforsup1test\"], [\"created_at\", \"2017-03-07 22:59:44.569128\"]]\n   91    SQL (0.1ms)  UPDATE \"spree_taxons\" SET \"updated_at\" = '2017-03-07 22:59:44.570592' WHERE 1=0\n   92    SQL (0.1ms)  UPDATE \"spree_taxonomies\" SET \"updated_at\" = '2017-03-07 22:59:44.571176' WHERE \"spree_taxonomies\".\"id\" IN (SELECT \"spree_taxonomies\".\"id\" FROM \"spree_taxonomies\" WHERE 1=0  ORDER BY spree_taxonomies.position, spree_taxonomies.created_at)\n\n13 matches in 1 file\n",
+			"settings":
+			{
+				"buffer_size": 12789,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 192,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/brian/sandbox/ruby/work/ticketee/app/models/variant.rb",
+			"settings":
+			{
+				"buffer_size": 74,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/features/admin/settings_spec.rb",
+			"settings":
+			{
+				"buffer_size": 1035,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/features/admin/shipments_spec.rb",
+			"settings":
+			{
+				"buffer_size": 2381,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/features/admin/stock_management_spec.rb",
+			"settings":
+			{
+				"buffer_size": 5175,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/features/admin/stock_spec.rb",
+			"settings":
+			{
+				"buffer_size": 2625,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/features/admin/suppliers_spec.rb",
+			"settings":
+			{
+				"buffer_size": 5083,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 75.0,
+		"last_filter": "PackageResour",
+		"selected_items":
+		[
+			[
+				"PackageResour",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 217.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/controllers",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/controllers/ckeditor",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/controllers/spree",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/controllers/spree/admin",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/models",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/models/spree",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/models/spree/stock",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/overrides",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/overrides/spree",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/overrides/spree/admin",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/overrides/spree/admin/products",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/overrides/spree/admin/products/_form",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/overrides/spree/admin/products/index",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/overrides/spree/admin/shared",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/overrides/spree/admin/shared/sub_menu",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/overrides/spree/admin/shared/sub_menu/_configuration",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/overrides/spree/admin/stock_locations",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/overrides/spree/admin/stock_movements",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/overrides/spree/admin/stock_movements/_form",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/overrides/spree/layouts",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/overrides/spree/layouts/admin",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/views",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/views/spree",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/views/spree/admin",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/views/spree/admin/drop_ship_settings",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/views/spree/admin/shared",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/views/spree/admin/shipments",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/views/spree/admin/suppliers",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/views/spree/drop_ship_order_mailer",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/views/spree/shared",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/views/spree/supplier_mailer",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/config",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/db",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/db/migrate",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/lib",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/lib/spree_drop_ship"
+	],
+	"file_history":
+	[
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/lib/spree_drop_ship/engine.rb",
+		"/home/brian/sandbox/ruby/work/demo/Gemfile.lock",
+		"/home/brian/.config/sublime-text-3/Packages/GoSublime/CHANGELOG.md",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/controllers/spree/admin/root_controller_decorator.rb",
+		"/home/brian/sandbox/ruby/work/ticketee/app/models/product.rb",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/spec/features/admin/products_spec.rb",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/models/spree/supplier_ability.rb",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/models/spree/supplier.rb",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/models/spree/supplier_variant.rb",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/models/spree/stock_location_decorator.rb",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/overrides/spree/layouts/admin/converted_admin_tabs.html.erb.deface",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/overrides/spree/admin/products/index/override_rows.html.erb.deface",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/models/spree/product_decorator.rb",
+		"/home/brian/.config/sublime-text-3/Packages/PackageResourceViewer/README.md",
+		"/home/brian/.config/sublime-text-3/Packages/Color Scheme - Default/Monokai.tmTheme",
+		"/home/brian/.config/sublime-text-3/Packages/User/PackageResourceViewer.sublime-settings",
+		"/home/brian/.config/sublime-text-3/Packages/User/Package Control.sublime-settings",
+		"/home/brian/.config/sublime-text-3/Packages/Package Control/Package Control.sublime-settings",
+		"/home/brian/.config/sublime-text-3/Packages/Sublimerge Pro/Sublimerge.sublime-settings",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/mailers/spree/supplier_mailer.rb",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/app/models/spree.rb",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/lib/spree_drop_ship/factories.rb",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/spec/features/admin/return_authorizations_spec.rb",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/Gemfile",
+		"/home/brian/sandbox/ruby/work/drop-ship-src/spree_drop_ship/drop-ship.sublime-project",
+		"/home/brian/.rvm/gems/ruby-2.2.6/gems/spree_core-3.1.3/db/default/spree/countries.rb",
+		"/home/brian/sandbox/ruby/work/sandbox/lib/address_validator.rb",
+		"/home/brian/.rvm/gems/ruby-2.2.6/gems/spree_core-3.1.3/db/default/spree/states.rb",
+		"/home/brian/sandbox/ruby/work/sandbox/lib/AddressValidator.rb",
+		"/home/brian/sandbox/ruby/work/sandbox/lib/bowling.rb",
+		"/home/brian/sandbox/ruby/work/sandbox/spec/bowling_spec.rb",
+		"/home/brian/sandbox/ruby/work/sandbox/bowling.rb",
+		"/home/brian/.config/sublime-text-3/Packages/User/Sublimerge.sublime-settings",
+		"/home/brian/sandbox/ruby/work/sandbox/Gemfile",
+		"/home/brian/sandbox/ruby/work/sandbox/test2.rb",
+		"/home/brian/sandbox/ruby/work/sandbox/test1.rb",
+		"/home/brian/sandbox/ruby/work/demo/app/views/say/hello.html.erb",
+		"/home/brian/sandbox/ruby/work/demo/app/views/say/filenames.html.erb",
+		"/home/brian/sandbox/ruby/work/demo/config/routes.rb",
+		"/home/brian/sandbox/ruby/work/demo/app/controllers/say_controller.rb",
+		"/home/brian/sandbox/ruby/work/demo/app/views/say/goodbye.html.erb",
+		"/home/brian/sandbox/ruby/work/demo/app/helpers/say_helper.rb",
+		"/home/brian/sandbox/ruby/work/demo/app/views/layouts/application.html.erb",
+		"/home/brian/sandbox/ruby/work/demo/config/boot.rb",
+		"/home/brian/sandbox/ruby/work/demo/config/application.rb",
+		"/home/brian/scripts/test.py",
+		"/home/brian/scripts/output.txt",
+		"/media/Data/brian/_job/AboutMe2017.txt",
+		"/home/brian/Downloads/_AboutMe.txt",
+		"/media/Data/brian/_job/_AboutMe2017.txt",
+		"/media/Data/brian/_AboutMe2017.txt",
+		"/home/brian/sandbox/go/helloworld.go",
+		"/media/Data/_backup-linux/chrome/Bookmarks",
+		"/media/Data/_backup-linux/chrome/Bookmarks-old",
+		"/home/brian/.config/sublime-text-3/Packages/User/GoSublime.sublime-settings",
+		"/home/brian/.config/sublime-text-3/Packages/GoSublime/USAGE.md",
+		"/home/brian/Documents/china-channels.txt",
+		"/media/tvpad3/phanto/sample1.txt",
+		"/home/brian/Downloads/chinamovie_4.m3u8",
+		"/home/brian/Downloads/channels.txt",
+		"/home/brian/tmp/TVPad Revival 2016/phanto/phanto.cfg",
+		"/home/brian/Documents/china-channels",
+		"/media/tvpad3/phanto/cctv-channels.txt",
+		"/media/6c17ac19-d4b2-1f46-b682-9532d9f71c53/phanto/channels.txt",
+		"/media/6c17ac19-d4b2-1f46-b682-9532d9f71c53/channels/channels.txt",
+		"/home/brian/scripts/videbcontrol.sh"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"<open folders>,<current file>,-*.js,-*.css",
+			"<current file>,<open folders>",
+			"<current file>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"state",
+			"ransackable",
+			"split",
+			"dropship",
+			"split",
+			"finalize_with_drop_ship",
+			"supplier_id",
+			":supplier",
+			"defined\\?",
+			"defined?",
+			"defined",
+			"Permitted",
+			"PermittedAttributes",
+			"resource_params",
+			"permitted_resource_params",
+			"add_suppliers",
+			"add_supplier",
+			"can't be blank",
+			"Stock item can't be blank",
+			"can\\?",
+			"can\\\\?",
+			"can\\?",
+			"can?",
+			":sidebar",
+			"add_supplier",
+			"try_spree_current_user",
+			"durably_decorate",
+			"INSERT",
+			"find",
+			"key",
+			"authorize_admin",
+			":admin",
+			"SupplierAbility",
+			"populate_for_supplier",
+			"supplier_user",
+			"mytest1",
+			"test",
+			"print",
+			"<%=​ @time ​%>​",
+			" <%=​ @time ​%>​",
+			"copyFromSourceToTarget",
+			"cctv",
+			".*cctv.*",
+			"cctv",
+			"cctv-1\\b",
+			"cctv1\\b/",
+			".*cctv.*",
+			"cctv\\.\\*",
+			"cctv.*",
+			".*CCTV.*",
+			"##########################################################################################################################",
+			"CCTV",
+			"韩国J高尔夫台",
+			"cctv",
+			"CCTV1",
+			"cctv1"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 8,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "spec/features/admin/orders_spec.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 334,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								233,
+								233
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/models/spree/variant_decorator.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 797,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								298,
+								298
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										789,
+										792
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/dot.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										34,
+										36
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/models/spree/stock/splitter/drop_ship.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1885,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								946,
+								946
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1789,
+										1792
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/dot.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										593,
+										595
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/models/spree/product_decorator.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1069,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								51,
+								51
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/controllers/spree/admin/products_controller_decorator.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 927,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/controllers/spree/admin/variants_controller_decorator.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 421,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								384,
+								384
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										386,
+										387
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										261,
+										262
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/controllers/spree/base_controller_decorator.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 358,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								358,
+								358
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/views/spree/admin/shipments/index.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4604,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1638,
+								1638
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1634,
+										1637
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1311,
+										1314
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 102.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/models/spree/shipment_decorator.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1101,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1101,
+								1101
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/controllers/spree/admin/shipments_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1564,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1560,
+										1563
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/dot.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										0,
+										6
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12789,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								277,
+								277
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "Gemfile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 192,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								178,
+								178
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/home/brian/sandbox/ruby/work/ticketee/app/models/variant.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 74,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								74,
+								74
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "spec/features/admin/settings_spec.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1035,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "spec/features/admin/shipments_spec.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2381,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 561.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "spec/features/admin/stock_management_spec.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5175,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "spec/features/admin/stock_spec.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2625,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "spec/features/admin/suppliers_spec.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5083,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4991,
+								4991
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1428.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.9o:///home/brian/sandbox/go":
+	{
+		"height": 221.0
+	},
+	"output.GoSublime-main-output":
+	{
+		"height": 112.0
+	},
+	"output.GoSublime-output":
+	{
+		"height": 112.0
+	},
+	"output.MarGo-output":
+	{
+		"height": 112.0
+	},
+	"output.find_results":
+	{
+		"height": 322.0
+	},
+	"pinned_build_system": "",
+	"project": "drop-ship.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"supplier_var",
+				"app/models/spree/supplier_variant.rb"
+			],
+			[
+				"supplier",
+				"app/models/spree/supplier.rb"
+			],
+			[
+				"ability",
+				"app/models/spree/supplier_ability.rb"
+			],
+			[
+				"spree",
+				"app/models/spree.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 443.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

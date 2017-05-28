@@ -1,0 +1,309 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fil",
+				"fill_in"
+			],
+			[
+				"class",
+				"class_method"
+			],
+			[
+				"refre",
+				"refresh_with_timing"
+			],
+			[
+				"Goo",
+				"Goodbye"
+			],
+			[
+				"myBy",
+				"myByteSlice2\t[]byte ν"
+			],
+			[
+				"my",
+				"myByteSlice2\t[]byte ν"
+			],
+			[
+				"Prin",
+				"Println\tn int, err error ƒ"
+			],
+			[
+				"myByte",
+				"myByteSlice2\t[]byte ν"
+			],
+			[
+				"prin",
+				"Println\tn int, err error ƒ"
+			],
+			[
+				"myFi",
+				"myFixedArr2\t[...]string ν"
+			],
+			[
+				"myF",
+				"myFixedArr2\t[...]string ν"
+			],
+			[
+				"pri",
+				"Println\tn int, err error ƒ"
+			],
+			[
+				"Pri",
+				"Println\tn int, err error ƒ"
+			],
+			[
+				"float",
+				"float2\tfloat64 ν"
+			],
+			[
+				"type",
+				"typeFunc\t ƒ"
+			],
+			[
+				"Pr",
+				"Println\tn int, err error ƒ"
+			],
+			[
+				"p",
+				"Println\tn int, err error ƒ"
+			],
+			[
+				"P",
+				"Println\tn int, err error ƒ"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 401.0
+	},
+	"console":
+	{
+		"height": 217.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/brian/.rvm/gems/ruby-2.2.6/gems/spree_core-3.1.3/db/default/spree/countries.rb",
+		"/home/brian/sandbox/ruby/work/sandbox/lib/address_validator.rb",
+		"/home/brian/.rvm/gems/ruby-2.2.6/gems/spree_core-3.1.3/db/default/spree/states.rb",
+		"/home/brian/sandbox/ruby/work/sandbox/lib/AddressValidator.rb",
+		"/home/brian/sandbox/ruby/work/sandbox/lib/bowling.rb",
+		"/home/brian/sandbox/ruby/work/sandbox/spec/bowling_spec.rb",
+		"/home/brian/sandbox/ruby/work/sandbox/bowling.rb",
+		"/home/brian/.config/sublime-text-3/Packages/User/Sublimerge.sublime-settings",
+		"/home/brian/.config/sublime-text-3/Packages/Sublimerge Pro/Sublimerge.sublime-settings",
+		"/home/brian/sandbox/ruby/work/sandbox/Gemfile",
+		"/home/brian/.config/sublime-text-3/Packages/GoSublime/CHANGELOG.md",
+		"/home/brian/sandbox/ruby/work/sandbox/test2.rb",
+		"/home/brian/sandbox/ruby/work/sandbox/test1.rb",
+		"/home/brian/sandbox/ruby/work/demo/app/views/say/hello.html.erb",
+		"/home/brian/sandbox/ruby/work/demo/app/views/say/filenames.html.erb",
+		"/home/brian/sandbox/ruby/work/demo/config/routes.rb",
+		"/home/brian/sandbox/ruby/work/demo/app/controllers/say_controller.rb",
+		"/home/brian/sandbox/ruby/work/demo/app/views/say/goodbye.html.erb",
+		"/home/brian/sandbox/ruby/work/demo/app/helpers/say_helper.rb",
+		"/home/brian/sandbox/ruby/work/demo/app/views/layouts/application.html.erb",
+		"/home/brian/sandbox/ruby/work/demo/config/boot.rb",
+		"/home/brian/sandbox/ruby/work/demo/config/application.rb",
+		"/home/brian/scripts/test.py",
+		"/home/brian/scripts/output.txt",
+		"/media/Data/brian/_job/AboutMe2017.txt",
+		"/home/brian/Downloads/_AboutMe.txt",
+		"/media/Data/brian/_job/_AboutMe2017.txt",
+		"/media/Data/brian/_AboutMe2017.txt",
+		"/home/brian/sandbox/go/helloworld.go",
+		"/media/Data/_backup-linux/chrome/Bookmarks",
+		"/media/Data/_backup-linux/chrome/Bookmarks-old",
+		"/home/brian/.config/sublime-text-3/Packages/User/GoSublime.sublime-settings",
+		"/home/brian/.config/sublime-text-3/Packages/GoSublime/USAGE.md",
+		"/home/brian/Documents/china-channels.txt",
+		"/media/tvpad3/phanto/sample1.txt",
+		"/home/brian/Downloads/chinamovie_4.m3u8",
+		"/home/brian/Downloads/channels.txt",
+		"/home/brian/tmp/TVPad Revival 2016/phanto/phanto.cfg",
+		"/home/brian/Documents/china-channels",
+		"/media/tvpad3/phanto/cctv-channels.txt",
+		"/media/6c17ac19-d4b2-1f46-b682-9532d9f71c53/phanto/channels.txt",
+		"/media/6c17ac19-d4b2-1f46-b682-9532d9f71c53/channels/channels.txt",
+		"/home/brian/scripts/videbcontrol.sh"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"mytest1",
+			"test",
+			"print",
+			"<%=​ @time ​%>​",
+			" <%=​ @time ​%>​",
+			"copyFromSourceToTarget",
+			"cctv",
+			".*cctv.*",
+			"cctv",
+			"cctv-1\\b",
+			"cctv1\\b/",
+			".*cctv.*",
+			"cctv\\.\\*",
+			"cctv.*",
+			".*CCTV.*",
+			"##########################################################################################################################",
+			"CCTV",
+			"韩国J高尔夫台",
+			"cctv",
+			"CCTV1",
+			"cctv1"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 322.0
+	},
+	"pinned_build_system": "",
+	"project": "Gemfile.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
