@@ -1,6 +1,6 @@
 Spree::Admin::StockLocationsController.class_eval do
 
-  create.after :set_supplier
+  create.before :set_supplier
 
   private
 
